@@ -25,10 +25,12 @@ A simple yet powerful Bash script that enables sending messages via multiple Tel
 
 ## Installation
 
-1. Download the bash script "telegram_bot.sh" via copy/paste, wget, or git pull.
+1. Download the bash script "telegram_bot.sh" via copy/paste, wget, or git clone.
+   WGET
    ```bash
    wget https://github.com/ClairDeCoder/telegram_cli_notifier/blob/main/telegram_bot.sh
    ```
+   GIT Clone
    ```bash
    git clone https://github.com/ClairDeCoder/telegram_cli_notifier.git
    cd telegram_cli_notifier
