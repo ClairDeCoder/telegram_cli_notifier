@@ -25,7 +25,16 @@ A simple yet powerful Bash script that enables sending messages via multiple Tel
 
 ## Installation
 
-1. Copy the script to your preferred location (a current $PATH like the one used below is preferable):
+1. Download the bash script "telegram_bot.sh" via copy/paste, wget, or git pull.
+   ```bash
+   wget https://github.com/ClairDeCoder/telegram_cli_notifier/blob/main/telegram_bot.sh
+   ```
+   ```bash
+   git clone https://github.com/ClairDeCoder/telegram_cli_notifier.git
+   cd telegram_cli_notifier
+   ```
+   
+2. Copy the script to your preferred location (a current $PATH like the one used below is preferable):
    ```bash
    cp telegram_bot.sh /usr/local/bin/telegram_bot.sh
    chmod +x /usr/local/bin/telegram_bot.sh
@@ -42,6 +51,7 @@ Each bot is stored in the format:
    ```bash
    bot_name|bot_token|chat_id
    ```
+
 ### Add Bots Using the Setup Command
 
 Run the setup command to add a new bot:
@@ -75,7 +85,7 @@ Example:
    telegram_bot.sh bot1 "Hello, World!"
    ```
 
-Incorporate this into other scripts or event management to alert you.
+Incorporate this into other scripts or events management to alert you.
 
 ## Advanced Usage
 Change Configuration File Location
