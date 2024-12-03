@@ -35,27 +35,22 @@ A simple yet powerful Bash script that enables sending messages via multiple Tel
 ## Configuration
 
 The script uses a configuration file to store bot details. By default, the configuration file is located at:
-   ```bash
     ~/.telegram_bots
 
 Each bot is stored in the format:
-   ```bash
     bot_name|bot_token|chat_id
 
 ### Add Bots Using the Setup Command
 
 Run the setup command to add a new bot:
-   ```bash
     telegram_bot.sh setup
 
 You’ll be prompted to enter:
-   ```bash
     Bot Name: A unique identifier for the bot (e.g., bot1).
     Bot Token: The API token of your Telegram bot.
     Chat ID: The Telegram chat ID to send messages to.
 
 Example:
-   ```bash
     Enter bot name (e.g., bot1): bot1
     Enter Telegram Bot Token: ABC123:XYZTUV
     Enter Chat ID: 12345678
@@ -63,11 +58,9 @@ Example:
 ## Usage
 
 Use the bot name to send a message:
-   ```bash
     telegram_bot.sh <bot_name> <message>
 
 Example:
-   ```bash
     telegram_bot.sh bot1 "Hello, World!"
 
 Incorporate this into other scripts or event management to alert you.
@@ -79,11 +72,9 @@ By default, the configuration file is located at ~/.telegram_bots. To persistent
 
 Open your shell's configuration file (e.g., ~/.bashrc or ~/.zshrc).  
 Add the following line:
-   ```bash
     export TELEGRAM_BOTS_CONFIG="/path/to/custom_config"
 
 Reload the shell or source the file:
-   ```bash
     source ~/.bashrc
 
 This will ensure the custom configuration file path is always used.
