@@ -93,7 +93,8 @@ Incorporate this into other scripts or events management to alert you.
 Change Configuration File Location
 
 By default, the configuration file is located at ~/.telegram_bots. To persistently change the configuration file location, you can define an environment variable in a configuration file like .bashrc or .zshrc.
-Open your shell's configuration file (e.g., ~/.bashrc or ~/.zshrc).  
+Open your shell's configuration file (e.g., ~/.bashrc or ~/.zshrc).
+
 Add the following line:
    ```bash
    export TELEGRAM_BOTS_CONFIG="/path/to/custom_config"
