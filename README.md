@@ -102,7 +102,7 @@ Configuration File Not Found:
 
 Invalid Bot Name:
 - Verify that the bot name exists in the configuration file.
-- Check the file format: bot_name:bot_token:chat_id.
+- Check the file format: bot_name|bot_token|chat_id.
 
 Failed to Send Message:
 - Ensure your bot token and chat ID are correct.
