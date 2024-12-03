@@ -2,7 +2,8 @@
 
 # Telegram Multi-Bot Messaging Script
 
-CONFIG_FILE="${HOME}/.telegram_bots"  # Default configuration file location
+# Use the TELEGRAM_BOTS_CONFIG environment variable if set, otherwise default to ~/.telegram_bots
+CONFIG_FILE="${TELEGRAM_BOTS_CONFIG:-${HOME}/.telegram_bots}"
 
 # Function to send a message using the specified bot
 send_message() {
