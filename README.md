@@ -35,33 +35,45 @@ A simple yet powerful Bash script that enables sending messages via multiple Tel
 ## Configuration
 
 The script uses a configuration file to store bot details. By default, the configuration file is located at:
-    ~/.telegram_bots
-
+   ```bash
+   ~/.telegram_bots
+   ```
 Each bot is stored in the format:
-    bot_name|bot_token|chat_id
-
+   ```bash
+   bot_name|bot_token|chat_id
+   ```
 ### Add Bots Using the Setup Command
 
 Run the setup command to add a new bot:
-    telegram_bot.sh setup
+   ```bash
+   telegram_bot.sh setup
+   ```
 
 You’ll be prompted to enter:
-    Bot Name: A unique identifier for the bot (e.g., bot1).
-    Bot Token: The API token of your Telegram bot.
-    Chat ID: The Telegram chat ID to send messages to.
+   ```bash
+   Bot Name: A unique identifier for the bot (e.g., bot1).
+   Bot Token: The API token of your Telegram bot.
+   Chat ID: The Telegram chat ID to send messages to.
+   ```
 
 Example:
-    Enter bot name (e.g., bot1): bot1
-    Enter Telegram Bot Token: ABC123:XYZTUV
-    Enter Chat ID: 12345678
+   ```bash
+   Enter bot name (e.g., bot1): bot1
+   Enter Telegram Bot Token: ABC123:XYZTUV
+   Enter Chat ID: 12345678
+   ```
 
 ## Usage
 
 Use the bot name to send a message:
-    telegram_bot.sh <bot_name> <message>
+   ```bash
+   telegram_bot.sh <bot_name> <message>
+   ```
 
 Example:
-    telegram_bot.sh bot1 "Hello, World!"
+   ```bash
+   telegram_bot.sh bot1 "Hello, World!"
+   ```
 
 Incorporate this into other scripts or event management to alert you.
 
@@ -69,13 +81,16 @@ Incorporate this into other scripts or event management to alert you.
 Change Configuration File Location
 
 By default, the configuration file is located at ~/.telegram_bots. To persistently change the configuration file location, you can define an environment variable in a configuration file like .bashrc or .zshrc.
-
 Open your shell's configuration file (e.g., ~/.bashrc or ~/.zshrc).  
 Add the following line:
-    export TELEGRAM_BOTS_CONFIG="/path/to/custom_config"
+   ```bash
+   export TELEGRAM_BOTS_CONFIG="/path/to/custom_config"
+   ```
 
 Reload the shell or source the file:
-    source ~/.bashrc
+   ```bash
+   source ~/.bashrc
+   ```
 
 This will ensure the custom configuration file path is always used.
 
@@ -92,3 +107,14 @@ Invalid Bot Name:
 Failed to Send Message:
 - Ensure your bot token and chat ID are correct.
 - Check the Telegram Bot [API status here](https://downforeveryoneorjustme.com/api.telegram.org).
+
+## Example Configuration File
+
+Example ~/.telegram_bots file:
+   ```bash
+   bot1|ABCDE:013912|-1003932013
+   bot2|ZXWVN:039130|-1003093251
+   ```
+
+## License
+Licensed under GNU 3.0 license.
